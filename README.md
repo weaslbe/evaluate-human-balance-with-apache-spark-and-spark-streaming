@@ -1,5 +1,6 @@
 # STEDI Ecosystem
 
+
 This project is part of the Data Streaming Nanodegree Program on Udacity. It is about Apache Spark and Apache Kafka, Redis and the Kafka ecosystem to build a stream processing application that shows a real-time fall risk graph of study participants of a human balance while walking study.
 For that, it might make sense to rename the project to `nd029-c2-apache-spark-and-spark-streaming-starter` so the scripts work.
 ---
@@ -108,7 +109,7 @@ The application development team has programmed certain business events to be pu
 
 The application development team was not able to complete the feature as the graph is currently not receiving any data. Because the graph is currently not receiving any data, you need to generate a new payload in a Kafka topic and make it available to the STEDI application to consume:
 
-![Empty Graph](images/empty_graph.png)
+![Empty Graph](project/starter/images/empty_graph.png)
 
 - Spark master and worker run as part of the docker-compose configuration
 
@@ -145,7 +146,7 @@ docker-compose up
 
 - From the timer page, use the toggle button in the upper right corner to activate simulated user data to see real-time customer and risk score data. Toggle off and on to create additional customers for redis events. Each time you activate it, STEDI creates 30 new customers, and then starts generating risk scores for each one. It takes 4 minutes for each customer to have risk scores generated, however customer data is generated immediately. 
 
-![Toggle Switch](images/toggle_simulation.png)
+![Toggle Switch](project/starter/images/toggle_simulation.png)
 
 - To monitor the progress of data generated, from a terminal type: 
 
@@ -170,7 +171,7 @@ docker logs -f nd029-c2-apache-spark-and-spark-streaming-starter-stedi-1
 
 - Once the data is populated in the configured kafka topic, the graph should have real-time data points
 
-![Populated Graph](images/populated_graph.png)
+![Populated Graph](project/starter/images/populated_graph.png)
 
 - Upload at least two screenshots of the working graph to the screenshots workspace folder 
 
