@@ -1,5 +1,9 @@
 # STEDI Ecosystem
 
+This project is part of the Data Streaming Nanodegree Program on Udacity. It is about Apache Spark and Apache Kafka, Redis and the Kafka ecosystem to build a stream processing application that shows a real-time fall risk graph of study participants of a human balance while walking study.
+For that, it might make sense to rename the project to `nd029-c2-apache-spark-and-spark-streaming-starter` so the scripts work.
+---
+
 You work for the data science team at STEDI, a small startup focused on assessing balance for seniors. STEDI has an application that collects data from seniors during a small exercise. The user logs in, and then selects the customer they are working with. Then the user starts a timer, and clicks a button with each step the senior takes. When the senior has reached 30 steps, their test is finished. The data transmitted enables the application to monitor seniors’ balance risk. 
 
 - Start the docker workspace from the root of the repository folder:
@@ -27,21 +31,21 @@ The STEDI data science team has configured some real-time data sources using Kaf
 - To connect to the redis instance, from the terminal connect to Redis: 
 
 ```
-docker exec -it nd029-c2-apache-spark-and-spark-streaming_redis_1 redis-cli
+docker exec -it nd029-c2-apache-spark-and-spark-streaming-starter-redis-1 redis-cli
 ```
 
 - Type:
 
 ```
-zrange customer 0 -1
+zrange Customer 0 -1
 ```
 
-- Locate the the customer you created in the output
+- Locate the customer you created in the output
 
 - In another terminal run this command to start monitoring the kafka topic:
 
 ```
-docker exec -it nd029-c2-apache-spark-and-spark-streaming_kafka_1 kafka-console-consumer --bootstrap-server localhost:9092 --topic redis-server
+docker exec -it nd029-c2-apache-spark-and-spark-streaming-starter-kafka-1 kafka-console-consumer --bootstrap-server localhost:9092 --topic redis-server
 ```
 
 - Back in the redis-cli, type: 
@@ -111,17 +115,17 @@ The application development team was not able to complete the feature as the gra
 - Save the Spark startup logs for submission with your solution using the commands below:
 
 ```
-docker logs nd029-c2-apache-spark-and-spark-streaming_spark_1 >& ../../spark/logs/spark-master.log
+docker logs nd029-c2-apache-spark-and-spark-streaming-starter-spark-1 >& ../../spark/logs/spark-master.log
 
-docker logs nd029-c2-apache-spark-and-spark-streaming_spark_1 >& ../../spark/logs/spark-master.log >& ../../spark/logs/spark-worker.log
+docker logs nd029-c2-apache-spark-and-spark-streaming-starter-spark-1 >& ../../spark/logs/spark-master.log >& ../../spark/logs/spark-worker.log
 ```
 
 - Create a new Kafka topic to transmit the complete risk score with birth date, so the data can be viewed in the STEDI application graph
 
-- Edit `docker-compose.yaml` and set the the name of the newly created topic:
+- Edit `docker-compose.yaml` and set the name of the newly created topic:
 
 ```
-KAFKA_RISK_TOPIC: ______
+KAFKA_RISK_TOPIC: stedi-risk-scores-final
 ```
 
 - From the terminal running the docker-composer output, stop the docker containers:
@@ -146,12 +150,10 @@ docker-compose up
 - To monitor the progress of data generated, from a terminal type: 
 
 ```
-docker logs -f nd029-c2-apache-spark-and-spark-streaming_stedi_1
+docker logs -f nd029-c2-apache-spark-and-spark-streaming-starter-stedi-1
 ```
 
-
-
-- You are going to to write 3 Spark Python scripts. Each will connect to a kafka broker running at `kafka:19092` :
+- You are going to write 3 Spark Python scripts. Each will connect to a kafka broker running at `kafka:19092` :
     - `redis-server` topic: Write one spark script `sparkpyrediskafkastreamtoconsole.py` to subscribe to the `redis-server` topic, base64 decode the payload, and deserialize the JSON to individual fields, then print the fields to the console. The data should include the birth date and email address. You will need these.
     - `stedi-events` topic: Write a second spark script `sparkpyeventskafkastreamtoconsole.py` to subscribe to the `stedi-events` topic and deserialize the JSON (it is not base64 encoded) to individual fields. You will need the email address and the risk score.
     - New Topic: Write a spark script `sparkpykafkajoin.py` to join the customer dataframe and the customer risk dataframes, joining on the email address. Create a JSON output to the newly created kafka topic you configured for STEDI to subscribe to that contains at least the fields below:

@@ -1,0 +1,239 @@
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|David.Sanchez@tes...|-11.5|
+|Jane.Khatib@test.com|  6.5|
+|Sean.Jefferson@te...|-12.0|
+|Suresh.Jackson@te...| -2.0|
+|John.Sanchez@test...| -1.0|
+| John.Olson@test.com|  0.0|
+| Eric.Olson@test.com| -2.5|
+|Jason.Clark@test.com| -3.0|
+|Santosh.Gonzalez@...| -4.0|
+|Jason.Jefferson@t...| -3.0|
+|Spencer.Olson@tes...| -3.5|
+|Bobby.Gonzalez@te...| -5.5|
+|Suresh.Harris@tes...| -3.5|
+|Jason.Habschied@t...| 34.0|
+|Jason.Smith@test.com|  7.0|
+|John.Fibonnaci@te...|-19.0|
+|Bobby.Clark@test.com|-30.0|
+|Jacob.Olson@test.com|-33.0|
+|Larry.Jefferson@t...|-10.0|
+|Gail.Aristotle@te...| 13.0|
++--------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Davis@test...| -5.0|
+|Edward.Anandh@tes...| -1.5|
+|  Ben.Ahmed@test.com| -4.0|
+| John.Doshi@test.com| -4.0|
+|   Jason.Wu@test.com| -4.5|
+|Edward.Clark@test...| -2.5|
+|Ashley.Habschied@...| -3.0|
+|Trevor.Abram@test...| 22.0|
+|Travis.Jefferson@...|-10.5|
+|Bobby.Khatib@test...|-15.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Howard@tes...|-18.5|
+|Spencer.Hansen@te...|-24.0|
+|David.Jackson@tes...| 28.0|
+|Jerry.Mitra@test.com|-12.0|
+| Sean.Ahmed@test.com| 13.0|
+|Travis.Olson@test...|-21.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Senthil.Smith@tes...| -4.0|
+|David.Abram@test.com|-29.0|
+| Eric.Jones@test.com| -4.0|
+|Danny.Gonzalez@te...| -3.5|
+|Frank.Doshi@test.com| -1.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Davis@test...| -4.0|
+|Edward.Anandh@tes...| -1.5|
+|  Ben.Ahmed@test.com| -5.0|
+| John.Doshi@test.com| -3.0|
+|   Jason.Wu@test.com| -2.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 5
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Edward.Clark@test...| -1.0|
+|Ashley.Habschied@...| -3.0|
+|Trevor.Abram@test...| 13.0|
+|Travis.Jefferson@...| -5.5|
+|Bobby.Khatib@test...|  9.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 6
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Howard@tes...| -2.0|
+|Spencer.Hansen@te...|-14.0|
+|David.Jackson@tes...|-14.0|
+|Jerry.Mitra@test.com|  8.0|
+| Sean.Ahmed@test.com| 23.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 7
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Olson@test...|  4.0|
+|Senthil.Smith@tes...|  2.5|
+|David.Abram@test.com|  6.0|
+| Eric.Jones@test.com| -2.5|
+|Danny.Gonzalez@te...| -2.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 8
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Frank.Doshi@test.com| -2.0|
+|Travis.Davis@test...| -2.5|
+|Edward.Anandh@tes...| -3.5|
+|  Ben.Ahmed@test.com| -5.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 9
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+| John.Doshi@test.com| -1.5|
+|   Jason.Wu@test.com| -3.0|
+|Edward.Clark@test...| -1.5|
+|Ashley.Habschied@...| -2.0|
+|Trevor.Abram@test...|-31.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 10
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Jefferson@...| 33.0|
+|Bobby.Khatib@test...|  2.0|
+|Travis.Howard@tes...| 13.0|
+|Spencer.Hansen@te...| 17.5|
+|David.Jackson@tes...|-20.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 11
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Jerry.Mitra@test.com| 13.5|
+| Sean.Ahmed@test.com|  9.5|
+|Travis.Olson@test...| 13.0|
+|Senthil.Smith@tes...| 11.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 12
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|David.Abram@test.com| 33.0|
+| Eric.Jones@test.com| -1.5|
+|Danny.Gonzalez@te...| -1.0|
+|Frank.Doshi@test.com| -1.0|
+|Travis.Davis@test...| -2.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 13
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Edward.Anandh@tes...| -2.5|
+|  Ben.Ahmed@test.com| -4.5|
+| John.Doshi@test.com| -2.5|
+|   Jason.Wu@test.com| -3.5|
+|Edward.Clark@test...| -3.0|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 14
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Ashley.Habschied@...| -2.0|
+|Trevor.Abram@test...|-17.0|
+|Travis.Jefferson@...| 10.5|
+|Bobby.Khatib@test...|-12.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 15
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Howard@tes...| 18.0|
+|Spencer.Hansen@te...| 15.5|
+|David.Jackson@tes...| 12.0|
+|Jerry.Mitra@test.com| -4.0|
+| Sean.Ahmed@test.com| 10.5|
++--------------------+-----+
+
+-------------------------------------------
+Batch: 16
+-------------------------------------------
++--------------------+-----+
+|            customer|score|
++--------------------+-----+
+|Travis.Olson@test...| 21.0|
+|Senthil.Smith@tes...| 15.5|
+|David.Abram@test.com| 13.0|
+| Eric.Jones@test.com| -2.5|
++--------------------+-----+
+

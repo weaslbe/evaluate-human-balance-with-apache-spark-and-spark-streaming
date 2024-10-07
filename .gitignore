@@ -1,3 +1,33 @@
-*.log
 *.jar
 cache
+
+venv*
+*_cache
+*cache__
+.vscode
+*.stackdump
+logs.txt
+dist
+.idea
+.env
+datasources_config.json
+*.iml
+*.swp
+local/*
+.coverage
+/protocols/
+
+# Exclude test data
+tests/test_data/test_data_*_*.json
+.python-version
+
+# Mac specific
+.DS_Store
+
+# Locally run scripts specifics
+requirements.txt.bak
+requirements_test.txt.bak
+
+# CI Build specifics
+test-reports/*
+docker_build/*
